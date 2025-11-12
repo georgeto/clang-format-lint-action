@@ -34,7 +34,7 @@ runs:
   image: 'Dockerfile'
   args:
     - --clang-format-executable
-    - /clang-format/clang-format${{ inputs.clangFormatVersion }}
+    - /usr/local/bin/clang-format-${{ inputs.clangFormatVersion }}_linux-amd64
     - -r
     - --color
     - always
